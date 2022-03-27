@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    height: 68px;
+}
+
+.logo{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 3px;
+    display: block;
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+
+nav ul{
+    overflow: hidden;
+    padding: 10px 15px;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    float: left;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 3px;
+    display: block;
+    padding: 10px 15px;
+}
+
+a:hover{
+    background-color: #6e6e6ed8; 
+    text-decoration: unset;
+    color: #000;
+    cursor: pointer;
+}
+
+nav ul li button{
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    display: none;
+}
+
+nav ul li button:hover{
+    background-color: #6e6e6ed8;
+    color: #fff;
+    cursor : pointer;
+}
+
+.side-nav{
+    background-color: black; 
+    position: fixed;
+    right: 0;
+    top: 68px;
+    width: 0px;
+    z-index: 2;
+    height: 90vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.side-nav ul{
+    /* background-color: blueviolet; */
+}
+
+.side-nav ul li{
+    list-style: none;
+    /* background-color: aqua; */
+}
+
+.side-nav ul li a{
+    /* background-color: brown; */
+    padding: 18px 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-nav ul li a:hover{
+    background-color: #6e6e6ed8;
+    color: #000;
+    cursor: pointer;
+}
+
+#close-btn{
+    font-size: 40px;
+    padding: 1px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5%;
+    padding: 5px 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+#close-btn:hover{
+    background-color: #6e6e6ed8;
+    color: #000;
+    cursor: pointer;
+}
+/* #######################Navbar completed############## */
+
+.sc{
+    position: relative;
+    /* width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; */
+}
+
+.sc video{
+    width: 100%;
+    filter: grayscale(100%);
+    /* height: 100vh;
+    background-color: aqua; */
+}
+
+.heading .in{
+    color: orange;
+}
+
+.heading .d{
+    color: white;
+}
+
+.heading .ia{
+    color: rgba(0, 128, 0, 0.836);
+}
+
+/* .video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+} */
+
+.video-container-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto ;
+    z-index: 1;
+    height: fit-content;
+    width: fit-content;
+    /* background-color: #fff; */
+    /* font-size: 30px; */
+    /* opacity: 0.5; */
+}
+
+.video-container-text .heading{
+    display: block;
+    width: 100%;
+    text-align: center;
+    /* background-color: rgba(0, 0, 255, 0.342); */
+    color: #000;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.video-container-text h3{
+    font-size: 40px;
+}
+
+.video-container-text h5{
+    font-size: 20px;
+}
+
+/* #################### Video completed ################### */ 
+
+.head-h2{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    /* background-color: pink; */
+}
+
+/* ###############ABOUT INDIA############ */
+
+.about{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width:900px) {
+    .about{
+        flex-direction: column;
+    }
+
+    .about img{
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .li-items ul {
+        line-height: 25px;
+    }
+
+    .li-items p{
+        bottom: 15px;
+    }
+
+    .BS{
+        margin-top: 22px;
+    }
+}
+
+.about img{
+    /* background-color: aqua; */
+    width: 40%;
+    margin-right: 5%;
+}
+
+
+.about-in-para{
+    /* background-color: antiquewhite; */
+    /* width: 55%; */
+}
+
+.about-in-para p{
+    line-height: 25px;
+}
+
+.about-in-para h3{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+
+/* ###############About me completed############## */
+
+
+.li-items{
+    width: 90%;
+    margin: auto;
+    line-height: 30px;
+    position: relative;
+    /* background-color:blue; */
+}
+
+.li-items-img{
+    width: 100%;
+    height: 400px;
+    background-image: url('./shan-elahi-DDiLYt_F88w-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+    /* background-color: aquamarine; */
+}
+
+.li-items-ul{
+    font-weight: 400;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.wtkm{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.click-me{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.click-me button{
+    font-weight: 600;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.click-me a{
+    display: inline;
+}
+
+/* ##############HISTORY########### */
+
+
+.haip{
+    line-height: 35px;
+}
+
+.footer{
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+    margin-top : 50px;
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+}
+
+@media all and (max-width:1000px){
+    nav ul li a{
+        display: none;
+    }
+
+    nav ul li button{
+        display: block;
+    }
+}
+
+@media all and (min-width:1000px){
+    .side-nav{
+        display: none;
+    }
+}
